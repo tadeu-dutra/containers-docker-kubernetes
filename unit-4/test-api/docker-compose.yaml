@@ -12,22 +12,5 @@ services:
       - mongo
     ports:
       - "8080:8080"
-    # environment:
-    #   SPRING_DATA_MONGODB_URI: mongodb://mongo:27017/mydb
-    # command: >
-    #   java -jar /app/test-api.jar
-    #   --spring.data.mongodb.uri=mongodb://mongo:27017/mydb
-
-# volumes:
-#   mongodata:
-
-#     environment:
-#       SPRING_DATA_MONGODB_URI: mongodb://mongo:27017/mydb
-#       # SPRING_DATA_MONGODB_URI: mongodb://${SPRING_DATA_MONGODB_HOST:mongo}:${SPRING_DATA_MONGODB_PORT:27017}/${SPRING_DATA_MONGODB_DATABASE:mydb}
-
-#     command: >
-#       java -jar /app/test-api.jar
-#       --spring.data.mongodb.uri=mongodb://mongo:27017/mydb
-
 volumes:
   mongodata:
